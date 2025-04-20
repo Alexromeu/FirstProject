@@ -116,7 +116,7 @@ submitBtn.addEventListener('click', (event) => {
     moreInfoDialog.showModal()
     goBackDialogBtn.addEventListener('click', () => moreInfoDialog.close())
    }
-})
+} {once:true})
 
 
 //main page btns listeners
