@@ -1,0 +1,193 @@
+* {
+    --color-dark:#2D336B;
+    --color-light:#FFF2F2;
+    --color-light-blue:#A9B5DF;
+    --color-middle-blue:#7886C7;
+    font-family: 'Roboto', sans-serif;
+}
+
+main , .dashboard-content{
+    position:relative;
+    left:210px;
+}
+
+header {
+  display: flex;
+  width:100%;
+  background-color: var(--color-dark);
+  color:var(--color-light);
+  margin-top:0;
+  top:0;
+  position:fixed;
+  left:0px;
+  justify-content: space-between;
+  z-index: 3;
+}
+
+body {
+    margin-top: 80px;
+    margin-left:230px;
+}
+
+header nav {
+    width:50%;
+    height:50px;
+    display:flex;
+    justify-content: flex-end; 
+    align-items: center;
+}
+
+.header-menu {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  
+}
+
+#logo {
+    display:flex;
+    justify-content:flex-start;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+    margin: 0 30px 0 30px;
+    font-size: 20px;
+    cursor:pointer;
+}
+
+
+
+.header-menu li{
+    list-style: none;
+    display:flex;
+    justify-content: flex-end;
+    margin:0 30px 0 30px;
+}
+
+.header-menu li:hover {
+    color:var(--color-light-blue);
+    cursor:pointer;
+}
+
+.side-menu {
+    position: fixed;
+    left:0;
+    top:0;
+    height:100%;
+    width:200px;
+    background-color:var(--color-light) ;
+}
+
+.side-menu ul {
+    position:absolute;
+    top:70px;
+    margin-top:0;
+    list-style: none;
+    padding:0;
+    width:90%;
+}
+
+.side-menu ul li {
+    margin-top:30px;
+    border-bottom:2px solid var(--color-dark);
+    width:100%;
+    position:relative;
+    padding:10px;
+    cursor:pointer;
+}
+.side-menu ul li:hover {
+    border-bottom:2px solid var(--color-light-blue);
+    color:var(--color-middle-blue)
+}
+
+.account-icon {
+    font-size: 24px; 
+    color: var(--color-light);
+    margin-left: 10px;
+    cursor: pointer;
+}
+  
+fieldset {
+    border:none;
+    border-top:2px solid var(--color-light-blue)
+}
+
+.input-numbers {
+    all:unset;
+    width:500px;
+    height:30px;
+    border:2px solid var(--color-light-blue);
+}
+
+input[type="radio"] {
+    appearance: none;
+    width:20px;
+    height:20px;
+    color:var(--color-light-blue);
+    border-radius:50%;
+    border:3px solid var(--color-light-blue);
+    margin:10px;
+} 
+
+input[type="radio"]:checked {
+    appearance: none;
+    width:20px;
+    height:20px;
+    border-radius:50%;
+    border:3px solid var(--color-middle-blue);
+    background: linear-gradient(45deg,var(--color-dark),var(--color-light-blue))
+} 
+
+#div-radio {
+    display:flex;
+    align-items: center;
+    border-top:3px solid var(--color-light-blue)
+}
+
+button {
+    cursor:pointer;
+    appearance:none;
+    width:100px;
+    background-color: var(--color-dark);
+    border: 3px solid var(--color-light-blue);
+    color: var(--color-light);
+    margin:20px;
+}
+
+button:active {
+    cursor:pointer;
+    appearance:none;
+    width:100px;
+    background-color: var(--color-light);
+    border: 3px solid var(--color-dark);
+    color: var(--color-dark);
+    margin:20px;
+}
+
+.btn-container {
+    margin:50px;
+}
+
+#transactions-table {
+    text-align:center;
+    width:70%;
+}
+
+.hidden {
+    display:none
+}
+
+/** table edition**/
+
+#transactions-table-container {
+    display:none;
+    justify-content:center;
+    border:2px solid black;
+}
+
+th, td {
+    width:120px;
+    border:2px solid black;
+    text-align:center;
+}
+

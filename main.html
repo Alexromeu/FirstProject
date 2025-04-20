@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="styles.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Poppins&family=Playfair+Display&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+     <div id="logo">Transactions Manager</div>
+     <nav>
+        <ul class="header-menu">
+            <li>Contact Us</li>
+            <li><i class="fa-solid fa-user account-icon"></i>
+        </ul>
+     </nav>
+    </header>
+    <nav class="side-menu">
+        <ul>
+            <li id="dashboard-btn">Dashboard</li>
+            <li id="transactions-btn">Transactions</li>
+            <li id="new-transaction-btn">New Transaction</li>
+        </ul>
+    </nav>
+
+  
+
+    <section id="new-transaction">
+
+        <h1>New Transaction</h1>
+        <form>
+            <fieldset>
+                <legend>Amount</legend>
+                <input id="amount-input-transaction" type="number" class="input-numbers">
+            </fieldset>
+
+            <fieldset>
+                <legend>Description</legend>
+                <input id="description-input-transaction" type="text" class="input-numbers">
+            </fieldset>
+            
+            <label for="div-radio">Type of Transaction</label> 
+            <div id="div-radio">
+              <label for="radio-transaction-deposit">Deposit</label>  
+                <input type="radio" name="type-of-transaction" value="deposit">
+              <label for="radio-transaction-withdraw">Withdraw</label>  
+                <input type="radio" name="type-of-transaction" value="withdraw">
+            </div>
+
+            <div class="btn-container">
+              <button type="submit" id="submit-btn">Submit</button>
+              <button id= "clear-btn">Clear</button>
+            </div>
+        </form>
+
+        <dialog id="transaction-approve">
+            <p>Are you sure the information is correct?</p>
+            <button id="dialog-btn">Approve</button>
+            <button id="cancel-dialog-btn">Cancel</button>
+        </dialog>
+
+        <dialog id="more-info-dialog">
+            <p>Please fill all the required fields.</p>
+            <button id="go-back-dialog-btn">Go Back</button>
+        </dialog>
+
+    </section>
+
+    <section id="transactions-table-container">
+        <table id="table-transactions"></table>
+    </section>
+    
+</body>
+<script src="script.js"></script>
+</html>
